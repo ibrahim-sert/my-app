@@ -78,7 +78,8 @@ export default function Home() {
       id: "apexchart-example",
     },
     xaxis: {
-      categories: posts?.map((d) => d.date) || [],
+      categories:
+        posts?.sort((a, b) => a.date - b.date).map((d) => d.date) || [],
     },
   };
 
@@ -89,14 +90,18 @@ export default function Home() {
   const series = [
     {
       name: "Frontend Salaries",
-      data: Object.values(posts)?.map((v) => v.fValue),
+      data: Object.values(posts)
+        ?.sort((a, b) => a.date - b.date)
+        .map((v) => v.fValue),
       // posts?.[0]?.data
       //   ?.sort((a, b) => a.date - b.date)
       //   .map((d) => d.value),
     },
     {
       name: "Backend Salaries",
-      data: Object.values(posts)?.map((v) => v.bValue),
+      data: Object.values(posts)
+        ?.sort((a, b) => a.date - b.date)
+        .map((v) => v.bValue),
       // posts?.[1]?.data
       //   ?.sort((a, b) => a.date - b.date)
       //   .map((d) => d.value),
@@ -108,9 +113,9 @@ export default function Home() {
     <Formik
       initialValues={{
         id: 0,
-        date: 0,
-        fValue: 0,
-        bValue: 0,
+        date: "",
+        fValue: "",
+        bValue: "",
       }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
