@@ -1,0 +1,77 @@
+{
+  "series": [],
+  "backend": [
+    {
+      "id": 1,
+      "date": 2000,
+      "fValue": 40,
+      "bValue": 50
+    },
+    {
+      "id": 2,
+      "date": 2001,
+      "fValue": 80,
+      "bValue": 50
+    },
+    {
+      "id": 3,
+      "date": 2002,
+      "fValue": 50,
+      "bValue": 30
+    },
+    {
+      "id": 4,
+      "date": 2020,
+      "fValue": 50,
+      "bValue": 75
+    },
+    {
+      "id": 5,
+      "date": 2015,
+      "fValue": 75,
+      "bValue": 85
+    },
+    {
+      "id": 6,
+      "date": 2018,
+      "fValue": 15,
+      "bValue": 19
+    },
+    {
+      "id": 7,
+      "date": 2020,
+      "fValue": 15,
+      "bValue": 35
+    },
+    {
+      "id": 8,
+      "date": 2011,
+      "fValue": 65,
+      "bValue": 98
+    },
+    {
+      "id": 9,
+      "date": 2024,
+      "fValue": 100,
+      "bValue": 100
+    },
+    {
+      "id": 10,
+      "date": 2011,
+      "fValue": 0,
+      "bValue": 0
+    },
+    {
+      "id": 11,
+      "date": 2021,
+      "fValue": 50,
+      "bValue": 60
+    },
+    {
+      "id": 12,
+      "date": 2022,
+      "fValue": 50,
+      "bValue": 80
+    }
+  ]
+}
